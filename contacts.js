@@ -1,12 +1,11 @@
 const path = require('path');
 const fs = require('fs').promises;
 const { v4: uuid } = require('uuid');
-//  Розкоментуйте і запиши значення
 
- const contactsPath = path.resolve('./db/contacts.json');;
+const contactsPath = path.resolve('./db/contacts.json');;
  
 
-// TODO: задокументувати кожну функцію
+
 async function listContacts() {
     try {
         const contactsData = await fs.readFile(contactsPath, 'utf8');
